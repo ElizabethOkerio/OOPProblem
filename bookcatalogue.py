@@ -11,6 +11,8 @@ def __init__(self,name_of_book,author_of_book,book_category):
 
 	class IssueandBorrowBooks(SchoolLibraryBooks):
 
+		name_of_book = SchoolLibraryBooks.name_of_book
+
 		def __init__(self,name_of_borrower,date_borrowed,date_returned):
 
 			self.name_of_borrower = name_of_borrower
